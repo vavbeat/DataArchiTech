@@ -35,7 +35,7 @@ const Integrations = () => {
       ],
       setup: [
         "Развертывание через Docker/Cloud",
-        "Подключение к DataLabel Pro API",
+        "Подключение к DataArchitech API",
         "Настройка проектов и пользователей",
         "Интеграция ML-бэкендов"
       ]
@@ -59,7 +59,7 @@ const Integrations = () => {
       ],
       setup: [
         "Установка CVAT instance",
-        "Конфигурация с DataLabel Pro",
+        "Конфигурация с DataArchitech",
         "Настройка auto-annotation",
         "Экспорт в COCO/YOLO форматы"
       ]
@@ -102,7 +102,7 @@ const Integrations = () => {
             <span className="gradient-text">ведущими платформами</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            DataLabel Pro работает с Label Studio, CVAT и популярными ML-фреймворками. 
+            DataArchitech работает с Label Studio, CVAT и популярными ML-фреймворками. 
             Никакого vendor lock-in — ваши данные остаются под вашим контролем.
           </p>
         </div>

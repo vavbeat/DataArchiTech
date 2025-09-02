@@ -84,12 +84,12 @@ const Footer = () => {
 
   const contactInfo = {
     ru: {
-      email: "hello@datalabel.pro",
+      email: "hello@dataArchitech.ai",
       phone: "+7 (495) 123-45-67",
       address: "Москва, Россия"
     },
     en: {
-      email: "hello@datalabel.pro", 
+      email: "hello@dataArchitech.ai", 
       phone: "+7 (495) 123-45-67",
       address: "Moscow, Russia"
     }
@@ -105,9 +105,9 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DL</span>
+                <span className="text-white font-bold text-sm">DA</span>
               </div>
-              <span className="text-xl font-bold">DataLabel Pro</span>
+              <span className="text-xl font-bold">DataArchitech</span>
             </div>
             
             <p className="text-background/80 text-sm leading-relaxed">
@@ -157,7 +157,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-background/60">
-              © {currentYear} DataLabel Pro. {language === 'ru' ? 'Все права защищены.' : 'All rights reserved.'}
+              © {currentYear} DataArchitech. {language === 'ru' ? 'Все права защищены.' : 'All rights reserved.'}
             </div>
             
             <div className="flex items-center space-x-6">

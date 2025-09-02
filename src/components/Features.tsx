@@ -10,7 +10,10 @@ import {
   Zap, 
   Shield,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  Database,
+  Search,
+  Brain
 } from "lucide-react";
 
 const Features = () => {
@@ -54,6 +57,14 @@ const Features = () => {
       description: "Аномалии, тренды, прогнозирование, IoT данные",
       descriptionEn: "Anomalies, trends, forecasting, IoT data",
       features: ["Паттерн анализ", "Сезонность", "Outlier detection"]
+    },
+    {
+      icon: Database,
+      title: "RAG системы",
+      titleEn: "RAG Systems",
+      description: "Retrieval-Augmented Generation для корпоративных знаний",
+      descriptionEn: "Retrieval-Augmented Generation for enterprise knowledge",
+      features: ["Векторные базы", "Семантический поиск", "Контекстные ответы"]
     }
   ];
 
@@ -81,6 +92,14 @@ const Features = () => {
       description: "Двойная проверка, метрики согласованности, отчёты",
       descriptionEn: "Double review, consistency metrics, reports",
       color: "bg-green-50 text-green-600 border-green-200"
+    },
+    {
+      icon: Brain,
+      title: "RAG & Поиск знаний",
+      titleEn: "RAG & Knowledge Search",
+      description: "Векторный поиск, embeddings, корпоративные базы знаний",
+      descriptionEn: "Vector search, embeddings, enterprise knowledge bases",
+      color: "bg-orange-50 text-orange-600 border-orange-200"
     }
   ];
 
@@ -103,7 +122,7 @@ const Features = () => {
         </div>
 
         {/* Data Types Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-16">
           {dataTypes.map((type, index) => (
             <Card key={index} className="group hover:shadow-large transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-0">
               <CardHeader>
@@ -135,7 +154,7 @@ const Features = () => {
         </div>
 
         {/* Capabilities */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {capabilities.map((capability, index) => (
             <Card key={index} className={`group hover:shadow-large transition-all duration-300 border-2 ${capability.color.split(' ')[2]}`}>
               <CardHeader className="text-center">
@@ -161,12 +180,12 @@ const Features = () => {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Получите консультацию эксперта по лингвистике и выберите оптимальную стратегию разметки для ваших ML-проектов.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-white hover:shadow-glow transform hover:scale-[1.02] font-bold h-11 px-6 py-3 group">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md mx-auto sm:max-w-none">
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-primary text-white hover:shadow-glow transform hover:scale-[1.02] font-bold h-11 px-4 sm:px-6 py-3 group w-full sm:w-auto">
               Запросить консультацию
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-2 border-primary/20 bg-background text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-medium h-11 px-6 py-3">
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-2 border-primary/20 bg-background text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-medium h-11 px-4 sm:px-6 py-3 w-full sm:w-auto">
               Изучить интеграции
             </button>
           </div>
